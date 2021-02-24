@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div class="row">
+    <br />
+    <br />
+    <br />
+    <div class="col-md-4">
+        <div id="app">
+            <p>{{ username }}</p>
+            <p>{{ city }}</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            username: 'Mesut Kaya',
+            city: 'Istanbul'
+        }
+    })
+</script>
